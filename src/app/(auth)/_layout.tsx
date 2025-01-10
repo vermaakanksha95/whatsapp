@@ -3,7 +3,12 @@ import React from 'react'
 
 const AuthStack = () => {
   return (
-    <Stack></Stack>
+    <Stack screenOptions={{headerShown:false}}>
+        <Stack.Screen name='index'/>
+        <Stack.Screen name='terms_agree'/>
+        <Stack.Screen name='login'/>
+        <Stack.Screen name='verify_otp'/>
+    </Stack>
    
   )
 }
