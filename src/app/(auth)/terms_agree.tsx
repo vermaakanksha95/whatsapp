@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(30),
     fontWeight: "bold",
     color: "black",
-    marginBottom:verticalScale(10)
+    marginBottom:verticalScale(10),
   },
   image_style: {
     width: moderateScale(250),
