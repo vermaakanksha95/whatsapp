@@ -4,8 +4,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { moderateScale, scale, verticalScale } from "react-native-size-matters";
 import ImagePath from "@/src/constants/ImagePath";
 import ButtonComp from "@/src/components/atoms/buttonComp";
+import { router } from "expo-router";
 
 const TermsAgree = () => {
+   const onAgree = () => {
+      router.push("/(auth)/Login");
+   };
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -21,7 +25,7 @@ const TermsAgree = () => {
           <Text style={styles.link_text}> Teams of Service</Text>.
         </Text>
         <View style={{width:moderateScale(300)}}>
-          <ButtonComp title="AGREE AND CONTINUE" />
+          <ButtonComp title="AGREE AND CONTINUE" onPress={onAgree} />
         </View>
       </View>
       <View style={styles.footer}>
