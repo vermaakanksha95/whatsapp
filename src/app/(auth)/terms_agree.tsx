@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingVertical: verticalScale(84),
-    paddingHorizontal: scale(30),
+    paddingHorizontal: scale(20),
   },
   header: {
     alignItems: "center",
